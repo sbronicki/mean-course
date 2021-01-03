@@ -14,21 +14,23 @@ import { PostCreateComponent } from './posts/post-create/post-create.component';
 import { Header } from './header/header.component';
 import { PostListComponent } from './posts/post-list/post-list.component';
 import { PostsService } from './posts/posts.service';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  declarations: [AppComponent, PostCreateComponent, Header, PostListComponent],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    NoopAnimationsModule,
-    MatInputModule,
-    MatButtonModule,
-    MatCardModule,
-    MatToolbarModule,
-    MatExpansionModule,
-    HttpClientModule,
-  ],
-  providers: [PostsService],
-  bootstrap: [AppComponent],
+	declarations: [ AppComponent, PostCreateComponent, Header, PostListComponent ],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		FormsModule,
+		NoopAnimationsModule,
+		MatInputModule,
+		MatButtonModule,
+		MatCardModule,
+		MatToolbarModule,
+		MatExpansionModule,
+		HttpClientModule
+	],
+	providers: [ PostsService ],
+	bootstrap: [ AppComponent ]
 })
 export class AppModule {}
