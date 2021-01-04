@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatExpansionModule } from '@angular/material/expansion';
@@ -28,6 +29,7 @@ import { AppRoutingModule } from './app-routing.module';
 		MatCardModule,
 		MatToolbarModule,
 		MatExpansionModule,
+		MatProgressSpinnerModule,
 		HttpClientModule
 	],
 	providers: [ PostsService ],
